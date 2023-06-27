@@ -1,0 +1,11 @@
+<p appColor>att-dir works!</p>
+<!-- Class level attribute directive -->
+<div [ngClass]="['classOne', 'classTwo']">Array of classes</div>
+<div [ngClass]="'classOne classTwo'">String of classes</div>
+<!-- <div [ngClass]="{'classOne':false, 'classTwo':true}">Object of classes</div> -->
+<div [ngClass]="{'classOne':isclassOneApply, 'classTwo':isClassTwoApply}">Object of classes</div>
+
+<!-- style level attribute directive -->
+<div [ngStyle]="{'color':'red', 'font-size':'20px'}">Style using ngStyle</div>
+<!-- style level but fetching value or property from component -->
+<div [ngStyle]="{'color':myColor, 'font-size':myFontSize}">Style using ngStyle</div>

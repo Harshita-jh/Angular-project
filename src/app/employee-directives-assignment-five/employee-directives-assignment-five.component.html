@@ -1,0 +1,26 @@
+<p>employee-directives-assignment-five works!</p>
+<h1>This is Bootstrap</h1>
+<hr>
+    <table class="table align-center">
+        <thead class="bg-light">
+          <tr>
+            <th>Emp-Id</th>
+            <th>Emp Name</th>
+            <th>Emp Salary</th>
+            <th>Emp Designation</th>
+            <th>Emp Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-info" *ngFor="let emp of employees">
+            <th>{{emp.empId}}</th>
+            <td>{{emp.empName}}</td>
+            <td>{{emp.empSal}}</td>
+            <td>{{emp.empDesig}}</td>
+            <td><img src = {{emp.empImg}} style="width: 45px; height: 45px"
+              class="rounded-circle" /></td>
+          </tr>
+       
+            
+        </tbody>
+      </table>

@@ -1,0 +1,40 @@
+<p>pre-defined-directives works!</p>
+<div>Product One</div>
+
+<div *ngIf="showElement">Product Two</div>
+
+<div>Product Three</div>
+
+
+
+
+
+<div [ngSwitch]="course">
+
+    <p *ngSwitchCase="'java'">Java Course selected</p>
+
+    <p *ngSwitchCase="'react'">React Course selected</p>
+
+    <p *ngSwitchCase="'angular'">Angular Course selected</p>
+
+    <p *ngSwitchDefault>Invalid Course selected</p>
+
+</div>
+
+
+
+
+<ul *ngFor="let user of users">
+
+    <li>{{user}}</li>
+
+</ul>
+
+
+
+
+<ul *ngFor="let product of products">
+
+    <li>{{product.productId}} - {{product.productName}} - {{product.productPrice}}</li>
+
+</ul>

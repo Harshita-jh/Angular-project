@@ -1,0 +1,26 @@
+<p>calculator-service-assignment works!</p>
+
+<strong><p>Calculator</p></strong>
+<fieldset>
+<div class="a">
+
+<pre>
+
+First Number : <input type="text" #firstNo> <br>
+
+Second Number: <input type="text" #secondNo> <br>
+
+result       : {{result}}
+
+</pre>
+
+<button class="btnadd" (click)="addOperation(firstNo.value, secondNo.value)">Add</button>
+
+<button class="btnsub" (click)="subOperation(firstNo.value, secondNo.value)">Sub</button>
+
+<button class="btnmul" (click)="mulOperation(firstNo.value, secondNo.value)">Mul</button>
+
+<button class="btndiv" (click)="divOperation(firstNo.value, secondNo.value)">Div</button>
+
+</div>
+</fieldset>

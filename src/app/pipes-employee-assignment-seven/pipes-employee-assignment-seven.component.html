@@ -1,0 +1,20 @@
+<p>pipes-employee-assignment-seven works!</p>
+
+<table class="table align-center">
+    <thead class="bg-light">
+      <tr>
+        <th>Emp-Id</th>
+        <th>Emp Name</th>
+        <th>Emp Salary</th>
+        <th>Emp Designation</th>
+       </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees" appMouseevent>
+            <td>{{employee.empId}}</td>
+            <td>{{employee.empName | titlecase}}</td>
+            <td>{{employee.empSal | currency:'INR':true}}</td>
+            <td>{{employee.empDesig | titlecase}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,13 @@
+<p>event-binding works!</p>
+<pre>
+
+    First Number  : <input type="text" #firstNo>
+    
+    Second Number : <input type="text" #secondNo>
+    
+    Result : {{result}}
+    
+    </pre>
+    
+    <button class="btnadd" (click)="addOperation(firstNo.value, secondNo.value)">Add</button>
+    <hr>

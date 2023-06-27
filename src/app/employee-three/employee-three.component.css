@@ -1,0 +1,10 @@
+hr{
+    height:2px;
+    background-color:black;
+}
+#image {
+float: left;
+color: rgba(47, 166, 23, 0.34);
+background-color: rgb(134, 160, 171);
+height: 150px;
+}

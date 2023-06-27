@@ -1,0 +1,16 @@
+<p>event-binding-assignment-four works!</p>
+<pre>
+
+    First Number  : <input type="text" #firstNo>
+    
+    Second Number : <input type="text" #secondNo>
+    
+    Result : {{result}}
+    
+    </pre>
+    
+    <button class="btnadd" (click)="addOperation(firstNo.value, secondNo.value)">Add</button>
+    <button class="btnsub" (click)="subOperation(firstNo.value, secondNo.value)">Sub</button>
+    <button class="btnmul" (click)="mulOperation(firstNo.value, secondNo.value)">Mul</button>
+    <button class="btndiv" (click)="divOperation(firstNo.value, secondNo.value)">Div</button>
+    <hr>
